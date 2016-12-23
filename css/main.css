@@ -50,15 +50,21 @@ tr:hover {
 }
 
 @media only screen and (max-width: 760px) {
-    table, th, td, tr {
+    /*table, th, td, tr {
         display: block;
     }
 
+    table {
+        border: 1px solid dimgrey;
+        width: 100%;
+    }
+
     th {
-        background-color: aqua;
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 5px;
     }
 
     td {
@@ -73,20 +79,79 @@ tr:hover {
         white-space: nowrap;
     }
 
-    /*td:nth-of-type(1):before { content: "Modalidad"; }
-    td:nth-of-type(2):before { content: "Competición";}
-    td:nth-of-type(3):before { content: "Fecha"; }
-    td:nth-of-type(4):before { content: "Hora"; }
-    td:nth-of-type(5):before { content: "Logo"; }
-    td:nth-of-type(6):before { content: "Local"; }
-    td:nth-of-type(7):before { content: "Logo"; }
-    td:nth-of-type(8):before { content: "Visitante"; }
-    td:nth-of-type(9):before { content: "Resultado"; }
-    td:nth-of-type(10):before { content: "Pista"; }*/
-
     td:before {
         content: attr(data-label);
         text-align: left;
+        font-weight: bold;
     }
+
+    td:after {
+        border-right: 1px solid dimgrey;
+    }
+
+
+
+    td:nth-of-type(5):before { border-top: 2px solid dimgrey; width: 90%; }
+    td:nth-of-type(7):before { border-top: 1px solid dimgrey; width: 90%; }
+    td:nth-of-type(9):before { border-top: 2px solid dimgrey; width: 90%; }*/
+
+    table {
+        border: 0px;
+    }
+
+    th {
+        display: none;
+        border-bottom: 0;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: transparent;
+    }
+
+    td {
+        display: block;
+        border-bottom: 1px dotted #cccccc;
+    }
+
+    td:first-child {
+        border-bottom: 0;
+    }
+
+    td:last-child {
+        border-bottom: 0;
+    }
+
+    td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 50%;
+        text-align: left;
+        border-right: 7px solid black;
+        overflow-wrap: break-word;
+    }
+
+    /* TODO con esta ñapa el separador de puntos no ocupa el 100% del ancho */
+
+    td:nth-child(5) {
+        text-align: right;
+        margin-right: 21%;
+    }
+    td:nth-child(7) {
+        text-align: right;
+        margin-right: 21%;
+    }
+
+
+    /* TODO  El segundo child, al desbordar la ventana y pasar a siguiente línea, va al centro */
+
+
 
 }
