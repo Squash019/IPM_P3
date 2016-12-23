@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Federación Galega de Patinaxe</title>
+    <script src="./js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+    <a href="index.html">
+        <img class="cabecera" src="./img/header_desktop.png" alt="Header Federación Galega de Patín">
+    </a>
+</div>
+
+<div class="cabecera-agenda">AGENDA COMPETICIONES / PARTIDOS</div>
+
+<div class="filtros">
+    <select class="selector-modalidades">
+        <option value="all-modalidades">Filtro Modalidad ...</option>
+        <option value="patines">HOCKEY PATINES</option>
+        <option value="linea">HOCKEY LÍNEA</option>
+    </select>
+
+    <select class="selector-clubes">
+        <option value="all-clubs">Filtro Club ...</option>
+        <option value="aguarda"></option>
+        <option value="borbolla" class="borbolla"></option>
+        <option value="compostela"></option>
+        <option value="liceo-a" class="liceo-a"></option>
+        <!-- INSERTAR EL RESTO DE CLUBES AQUÍ -->
+    </select>
+
+    <!-- RECORDAR QUE EN FUNCIÓN DE PATINES O LÍNEA SON DISTINTAS
+         POSIBLEMENTE MOSTRAR UNO U OTRO MEDIANTE JAVASCRIPT. -->
+    <select class="patines-selector-competiciones">
+        <option value="patines-all-competiciones">Filtro Competición ...</option>
+        <option value="patines-copa-senior">COPA FEDERACIÓN SENIOR MASCULINA</option>
+        <option value="patines-liga-senior-autonomica">LIGA SENIOR AUTONÓMICA</option>
+        <option value="patines-liga-junior-autonomica">LIGA JUNIOR AUTONÓMICA</option>
+        <option value="patines-liga-juvenil-autonomica">LIGA JUVENIL AUTONÓMICA</option>
+        <option value="patines-liga-infantil-1-autonomica">LIGA INFANTIL 1ª DIVISIÓN AUTONÓMICA</option>
+        <option value="patines-liga-infantil-2-autonomica">LIGA INTANTIL 2ª DIVISIÓN AUTONÓMICA</option>
+        <option value="patines-copa-federacion-femenina">COPA FEDERACIÓN FEMENINA</option>
+        <option value="patines-liga-alevin-1">LIGA ALEVÍN 1ª</option>
+        <option value="patines-liga-alevin-2">LIGA ALEVÍN 2ª</option>
+        <option value="patines-liga-benjamin-1">LIGA BENJAMÍN 1ª</option>
+        <option value="patines-liga-benjamin-2">LIGA BENJAMÍN 2ª</option>
+        <option value="patines-liga-prebenjamin-1">LIGA PREBENJAMÍN 1ª</option>
+        <option value="patines-liga-prebenjamin-2">LIGA PREBENJAMÍN 2ª</option>
+        <option value="patines-liga-alevin-grupo1">LIGA ALEVÍN GRUPO 1</option>
+        <option value="patines-liga-alevin-grupo2">LIGA ALEVÍN GRUPO 2</option>
+        <option value="patines-liga-alevin-grupo3">LIGA ALEVÍN GRUPO 3</option>
+        <option value="patines-liga-benjamin-grupo1">LIGA BENJAMÍN GRUPO 1</option>
+        <option value="patines-liga-benjamin-grupo2">LIGA BENJAMÍN GRUPO 2</option>
+        <option value="patines-liga-benjamin-grupo3">LIGA BENJAMÍN GRUPO 3</option>
+        <option value="patines-liga-benjamin-grupo4">LIGA BENJAMÍN GRUPO 4</option>
+        <option value="patines-liga-prebenjamin-grupo1">LIGA PREBENJAMÍN GRUPO 1</option>
+        <option value="patines-liga-prebenjamin-grupo2">LIGA PREBENJAMÍN GRUPO 2</option>
+        <option value="patines-liga-prebenjamin-grupo3">LIGA PREBENJAMÍN GRUPO 3</option>
+        <option value="patines-liga-prebenjamin-grupo4">LIGA PREBENJAMÍN GRUPO 4</option>
+        <option value="patines-liga-micro-norte">LIGA MICRO NORTE</option>
+        <option value="patines-liga-micro-sur">LIGA MICRO SUR</option>
+    </select>
+    
+    <select class="linea-selector-competiciones">
+        <option value="linea-all-competiciones">Filtro Competición ...</option>
+        <option value="linea-liga-infantil">LIGA INFANTIL</option>
+        <option value="linea-liga-senior-femenina">LIGA SENIOR FEMENINA</option>
+        <option value="linea-liga-senior-masculina">LIGA SENIOR MASCULINA</option>
+        <option value="linea-liga-benjamin">LIGA BENJAMÍN</option>
+    </select>
+
+    <button type="button">Resetear filtros</button>
+</div>
+
+<table class="responsive-table">
+    <tr>
+        <th>Modalidad</th>
+        <th>Competición</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th colspan="2">Local</th>
+        <th colspan="2">Visitante</th>
+        <th>Resultado</th>
+        <th>Pista</th>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-benjamin-1"></td>
+        <td data-label="Fecha" class="fecha">09/12/2016</td>
+        <td data-label="Hora" class="hora">18:30</td>
+        <td data-label="" class="logo-liceo"></td>
+        <td data-label="Local" class="liceo-a"></td>
+        <td data-label="" class="logo-liceo"></td>
+        <td data-label="Visitante" class="liceo-b"></td>
+        <td data-label="Resultado" class="resultado">5 - 4</td>
+        <td data-label="Campo" class="campo">COLEGIO LICEO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-benjamin-1"></td>
+        <td data-label="Fecha" class="fecha">16/12/2016</td>
+        <td data-label="Hora" class="hora">18:30</td>
+        <td data-label="" class="logo-liceo"></td>
+        <td data-label="Local" class="liceo-b"></td>
+        <td data-label="" class="logo-liceo"></td>
+        <td data-label="Visitante" class="liceo-a"></td>
+        <td data-label="Resultado" class="resultado">0 - 0</td>
+        <td data-label="Campo" class="campo">COLEGIO LICEO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">23/12/2016</td>
+        <td data-label="Hora" class="hora">17:30</td>
+        <td data-label="" class="logo-borbolla"></td>
+        <td data-label="Local" class="borbolla-a"></td>
+        <td data-label="" class="logo-dominicos"></td>
+        <td data-label="Visitante" class="dominicos"></td>
+        <td data-label="Resultado" class="resultado">0 - 0</td>
+        <td data-label="Campo" class="campo">COLEGIO LICEO</td>
+    </tr>
+    <!--<tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>-->
+</table>
+
+</body>
+</html>
