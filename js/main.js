@@ -2,6 +2,34 @@
  * Created by Manu on 21/12/16.
  */
 
+
+var filtroEquipo;
+
+var updateFilters = function(){
+    var trArray = document.getElementById('tablaPrincipal').rows;
+    for(var trIndex=1; trIndex<trArray.length; trIndex++){
+        //Iterar dentro de los tr de la tablaPrincipal
+        trArray[trIndex].style.display = 'table-row';
+        var tdArray = trArray[trIndex].cells;
+        var equipoA = tdArray[5].innerText;
+        var equipoB = tdArray[7].innerText;
+        //Comprobar filtro por equipo
+        if(equipoA != filtroEquipo && equipoB != filtroEquipo){
+            trArray[trIndex].style.display = 'none';
+        }
+    }
+}
+
+var addSelectorEvents = function(){
+    var clubSelector = document.getElementById('selector-clubes');
+    clubSelector.addEventListener("change", function(){
+        if(filtroEquipo != clubSelector.options[clubSelector.selectedIndex].value){
+            filtroEquipo = clubSelector.options[clubSelector.selectedIndex].value;
+            updateFilters();
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function loadLeagues() {
 
     /* Cargar categoría */
@@ -82,10 +110,6 @@ document.addEventListener("DOMContentLoaded", function loadLeagues() {
         logo_dominicos[i].innerHTML="<img src='./img/logos/logo-dominicos.png' style='width: 35px'/>";
     }
 
+    addSelectorEvents();
+
 });
-
-
-/*var clubFilter = document.getElementsByClassName("selector-clubes");
-for (i=0; i<clubFilter.length; i++) {
-    clubFilter[i]
-}*/

@@ -9,7 +9,13 @@ body {
     margin-bottom: 10px;
     text-align: center;
     width: 100%;
-    padding: 3px 0px;
+    padding: 3px 0;
+}
+
+.header{
+    position: relative;
+    float: left;
+    width: 100%;
 }
 
 .cabecera {
@@ -50,53 +56,9 @@ tr:hover {
 }
 
 @media only screen and (max-width: 760px) {
-    /*table, th, td, tr {
-        display: block;
-    }
 
     table {
-        border: 1px solid dimgrey;
-        width: 100%;
-    }
-
-    th {
-        display: none;
-    }
-
-    tr {
-        margin-bottom: 5px;
-    }
-
-    td {
-        position: relative;
-        padding-left: 60%;
-    }
-
-    td:before {
-        position: absolute;
-        left: 5%;
-        width: 45%;
-        white-space: nowrap;
-    }
-
-    td:before {
-        content: attr(data-label);
-        text-align: left;
-        font-weight: bold;
-    }
-
-    td:after {
-        border-right: 1px solid dimgrey;
-    }
-
-
-
-    td:nth-of-type(5):before { border-top: 2px solid dimgrey; width: 90%; }
-    td:nth-of-type(7):before { border-top: 1px solid dimgrey; width: 90%; }
-    td:nth-of-type(9):before { border-top: 2px solid dimgrey; width: 90%; }*/
-
-    table {
-        border: 0px;
+        border: 0;
     }
 
     th {
@@ -116,6 +78,7 @@ tr:hover {
 
     td {
         display: block;
+        text-align: right;
         border-bottom: 1px dotted #cccccc;
     }
 
@@ -134,23 +97,7 @@ tr:hover {
         font-weight: bold;
         width: 50%;
         text-align: left;
-        border-right: 7px solid black;
-        overflow-wrap: break-word;
     }
-
-    /* TODO con esta ñapa el separador de puntos no ocupa el 100% del ancho */
-
-    td:nth-child(5) {
-        text-align: right;
-        margin-right: 21%;
-    }
-    td:nth-child(7) {
-        text-align: right;
-        margin-right: 21%;
-    }
-
-
-    /* TODO  El segundo child, al desbordar la ventana y pasar a siguiente línea, va al centro */
 
 
 
