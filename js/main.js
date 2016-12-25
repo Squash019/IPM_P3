@@ -120,47 +120,47 @@ document.addEventListener("DOMContentLoaded", function loadLeagues() {
 
     var logo_liceo = document.getElementsByClassName("logo-liceo");
     for (i=0; i<logo_liceo.length; i++) {
-        logo_liceo[i].innerHTML="<img src='./img/logos/logo-liceo.png' style='width: 35px'/>";
+        logo_liceo[i].innerHTML="<img src='./img/logos/logo-liceo.png' alt='Logo Liceo' style='width: 35px'/>";
     }
 
     var logo_borbolla = document.getElementsByClassName("logo-borbolla");
     for (i=0; i<logo_borbolla.length; i++) {
-        logo_borbolla[i].innerHTML="<img src='./img/logos/logo-borbolla.png' style='width: 35px'/>";
+        logo_borbolla[i].innerHTML="<img src='./img/logos/logo-borbolla.png' alt='Logo Borbolla' style='width: 35px'/>";
     }
 
     var logo_dominicos = document.getElementsByClassName("logo-dominicos");
     for (i=0; i<logo_dominicos.length; i++) {
-        logo_dominicos[i].innerHTML="<img src='./img/logos/logo-dominicos.png' style='width: 35px'/>";
+        logo_dominicos[i].innerHTML="<img src='./img/logos/logo-dominicos.png' alt='Logo Dominicos' style='width: 35px'/>";
     }
 
     var logo_compania = document.getElementsByClassName("logo-compania");
     for (i=0; i<logo_compania.length; i++) {
-        logo_compania[i].innerHTML="<img src='./img/logos/logo-compania.png' style='width: 35px'/>";
+        logo_compania[i].innerHTML="<img src='./img/logos/logo-compania.png' alt='Logo Compañía' style='width: 35px'/>";
     }
 
     var logo_compos = document.getElementsByClassName("logo-compos");
     for (i=0; i<logo_compos.length; i++) {
-        logo_compos[i].innerHTML="<img src='./img/logos/logo-compos.png' style='width: 35px'/>";
+        logo_compos[i].innerHTML="<img src='./img/logos/logo-compos.png' alt='Logo Compostela' style='width: 35px'/>";
     }
 
     var logo_lubians = document.getElementsByClassName("logo-lubians");
     for (i=0; i<logo_lubians.length; i++) {
-        logo_lubians[i].innerHTML="<img src='./img/logos/logo-lubians.png' style='width: 35px'/>";
+        logo_lubians[i].innerHTML="<img src='./img/logos/logo-lubians.png' alt='Logo Lubiáns' style='width: 35px'/>";
     }
 
     var logo_traviesas = document.getElementsByClassName("logo-traviesas");
     for (i=0; i<logo_traviesas.length; i++) {
-        logo_traviesas[i].innerHTML="<img src='./img/logos/logo-traviesas.png' style='width: 35px'/>";
+        logo_traviesas[i].innerHTML="<img src='./img/logos/logo-traviesas.png' alt='Logo Traviesas' style='width: 35px'/>";
     }
 
     var logo_raxoi = document.getElementsByClassName("logo-raxoi");
     for (i=0; i<logo_raxoi.length; i++) {
-        logo_raxoi[i].innerHTML="<img src='./img/logos/logo-raxoi.png' style='width: 35px'/>";
+        logo_raxoi[i].innerHTML="<img src='./img/logos/logo-raxoi.png' alt='Logo Raxoi' style='width: 35px'/>";
     }
 
     var logo_ordenes = document.getElementsByClassName("logo-ordenes");
     for (i=0; i<logo_ordenes.length; i++) {
-        logo_ordenes[i].innerHTML="<img src='./img/logos/logo-ordenes.png' style='width: 35px'/>";
+        logo_ordenes[i].innerHTML="<img src='./img/logos/logo-ordenes.png' alt='Logo Órdenes' style='width: 35px'/>";
     }
 
     addSelectorEvents();
