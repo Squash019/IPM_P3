@@ -18,64 +18,20 @@
 <div class="cabecera-agenda">AGENDA COMPETICIONES / PARTIDOS</div>
 
 <div class="filtros">
-    <select class="selector-modalidades">
-        <option value="all-modalidades">Filtro Modalidad ...</option>
-        <option value="patines">HOCKEY PATINES</option>
-        <option value="linea">HOCKEY LÍNEA</option>
-    </select>
-
     <select id="selector-clubes" class="selector-clubes">
         <option value="all-clubs">Filtro Club ...</option>
-        <option value="H.C. BORBOLLA A" class="borbolla-a"></option>
-        <option value="H.C. BORBOLLA B" class="borbolla-b"></option>
-        <option value="CLUB COMPAÑÍA DE MARÍA A" class="compa-a"></option>
-        <option value="CLUB COMPAÑÍA DE MARÍA B" class="compa-b"></option>
-        <option value="C.H. COMPOSTELA" class="compostela"></option>
-        <option value="H.C. LICEO A" class="liceo-a"></option>
-        <option value="H.C. LICEO B" class="liceo-b"></option>
+        <option value="A.C. ÓRDENES" class="ordenes" label="A.C. ÓRDENES"></option>
+        <option value="C.H. COMPOSTELA" class="compostela" label="C.H. COMPOSTELA"></option>
+        <option value="CLUB COMPAÑÍA DE MARÍA A" class="compa-a" label="CLUB COMPAÑÍA DE MARÍA A"></option>
+        <option value="CLUB COMPAÑÍA DE MARÍA B" class="compa-b" label="CLUB COMPAÑÍA DE MARÍA B"></option>
+        <option value="ESCOLA LUBIÁNS" class="lubians" label="ESCOLA LUBIÁNS"></option>
+        <option value="H.C. BORBOLLA A" class="borbolla-a" label="H.C. BORBOLLA A"></option>
+        <option value="H.C. BORBOLLA B" class="borbolla-b" label="H.C. BORBOLLA B"></option>
+        <option value="H.C. LICEO A" class="liceo-a" label="H.C. LICEO A"></option>
+        <option value="H.C. LICEO B" class="liceo-b" label="H.C. LICEO B"></option>
+        <option value="H.C. RAXOI" class="raxoi" label="H.C. RAXOI"></option>
+        <option value="H.C. TRAVIESAS" class="traviesas" label="H.C. TRAVIESAS"></option>
     </select>
-
-    <!-- RECORDAR QUE EN FUNCIÓN DE PATINES O LÍNEA SON DISTINTAS
-         POSIBLEMENTE MOSTRAR UNO U OTRO MEDIANTE JAVASCRIPT. -->
-    <select class="patines-selector-competiciones">
-        <option value="patines-all-competiciones">Filtro Competición ...</option>
-        <option value="patines-copa-senior">COPA FEDERACIÓN SENIOR MASCULINA</option>
-        <option value="patines-liga-senior-autonomica">LIGA SENIOR AUTONÓMICA</option>
-        <option value="patines-liga-junior-autonomica">LIGA JUNIOR AUTONÓMICA</option>
-        <option value="patines-liga-juvenil-autonomica">LIGA JUVENIL AUTONÓMICA</option>
-        <option value="patines-liga-infantil-1-autonomica">LIGA INFANTIL 1ª DIVISIÓN AUTONÓMICA</option>
-        <option value="patines-liga-infantil-2-autonomica">LIGA INTANTIL 2ª DIVISIÓN AUTONÓMICA</option>
-        <option value="patines-copa-federacion-femenina">COPA FEDERACIÓN FEMENINA</option>
-        <option value="patines-liga-alevin-1">LIGA ALEVÍN 1ª</option>
-        <option value="patines-liga-alevin-2">LIGA ALEVÍN 2ª</option>
-        <option value="patines-liga-benjamin-1">LIGA BENJAMÍN 1ª</option>
-        <option value="patines-liga-benjamin-2">LIGA BENJAMÍN 2ª</option>
-        <option value="patines-liga-prebenjamin-1">LIGA PREBENJAMÍN 1ª</option>
-        <option value="patines-liga-prebenjamin-2">LIGA PREBENJAMÍN 2ª</option>
-        <option value="patines-liga-alevin-grupo1">LIGA ALEVÍN GRUPO 1</option>
-        <option value="patines-liga-alevin-grupo2">LIGA ALEVÍN GRUPO 2</option>
-        <option value="patines-liga-alevin-grupo3">LIGA ALEVÍN GRUPO 3</option>
-        <option value="patines-liga-benjamin-grupo1">LIGA BENJAMÍN GRUPO 1</option>
-        <option value="patines-liga-benjamin-grupo2">LIGA BENJAMÍN GRUPO 2</option>
-        <option value="patines-liga-benjamin-grupo3">LIGA BENJAMÍN GRUPO 3</option>
-        <option value="patines-liga-benjamin-grupo4">LIGA BENJAMÍN GRUPO 4</option>
-        <option value="patines-liga-prebenjamin-grupo1">LIGA PREBENJAMÍN GRUPO 1</option>
-        <option value="patines-liga-prebenjamin-grupo2">LIGA PREBENJAMÍN GRUPO 2</option>
-        <option value="patines-liga-prebenjamin-grupo3">LIGA PREBENJAMÍN GRUPO 3</option>
-        <option value="patines-liga-prebenjamin-grupo4">LIGA PREBENJAMÍN GRUPO 4</option>
-        <option value="patines-liga-micro-norte">LIGA MICRO NORTE</option>
-        <option value="patines-liga-micro-sur">LIGA MICRO SUR</option>
-    </select>
-    
-    <select class="linea-selector-competiciones">
-        <option value="linea-all-competiciones">Filtro Competición ...</option>
-        <option value="linea-liga-infantil">LIGA INFANTIL</option>
-        <option value="linea-liga-senior-femenina">LIGA SENIOR FEMENINA</option>
-        <option value="linea-liga-senior-masculina">LIGA SENIOR MASCULINA</option>
-        <option value="linea-liga-benjamin">LIGA BENJAMÍN</option>
-    </select>
-
-    <button type="button">Resetear filtros</button>
 </div>
 
 <table id="tablaPrincipal" class="responsive-table">
@@ -123,60 +79,116 @@
         <td data-label="Logo" class="logo-dominicos"></td>
         <td data-label="Visitante" class="dominicos"></td>
         <td data-label="Resultado" class="resultado">0 - 0</td>
+        <td data-label="Campo" class="campo">MONTE ALTO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">28/12/2016</td>
+        <td data-label="Hora" class="hora">19:30</td>
+        <td data-label="Logo" class="logo-compania"></td>
+        <td data-label="Local" class="compa-a"></td>
+        <td data-label="Logo" class="logo-borbolla"></td>
+        <td data-label="Visitante" class="borbolla-b"></td>
+        <td data-label="Resultado" class="resultado">2 - 1</td>
+        <td data-label="Campo" class="campo">COMPAÑÍA MARÍA</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">29/12/2016</td>
+        <td data-label="Hora" class="hora">18:30</td>
+        <td data-label="Logo" class="logo-compos"></td>
+        <td data-label="Local" class="compostela"></td>
+        <td data-label="Logo" class="logo-compania"></td>
+        <td data-label="Visitante" class="compa-b"></td>
+        <td data-label="Resultado" class="resultado">1 - 6</td>
         <td data-label="Campo" class="campo">COLEGIO LICEO</td>
     </tr>
-    <!--<tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>-->
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">31/12/2016</td>
+        <td data-label="Hora" class="hora">11:30</td>
+        <td data-label="Logo" class="logo-raxoi"></td>
+        <td data-label="Local" class="raxoi"></td>
+        <td data-label="Logo" class="logo-ordenes"></td>
+        <td data-label="Visitante" class="ordenes"></td>
+        <td data-label="Resultado" class="resultado">7 - 6</td>
+        <td data-label="Campo" class="campo">SANTIAGO VITE</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">31/12/2016</td>
+        <td data-label="Hora" class="hora">11:30</td>
+        <td data-label="Logo" class="logo-lubians"></td>
+        <td data-label="Local" class="lubians"></td>
+        <td data-label="Logo" class="logo-traviesas"></td>
+        <td data-label="Visitante" class="traviesas"></td>
+        <td data-label="Resultado" class="resultado">7 - 6</td>
+        <td data-label="Campo" class="campo">POLID. CALERO - CARBALLO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">9/1/2017</td>
+        <td data-label="Hora" class="hora">17:30</td>
+        <td data-label="Logo" class="logo-dominicos"></td>
+        <td data-label="Local" class="dominicos"></td>
+        <td data-label="Logo" class="logo-borbolla"></td>
+        <td data-label="Visitante" class="borbolla-a"></td>
+        <td data-label="Resultado" class="resultado">2 - 0</td>
+        <td data-label="Campo" class="campo">COLEGIO DOMINICOS</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">10/1/2017</td>
+        <td data-label="Hora" class="hora">11:30</td>
+        <td data-label="Logo" class="logo-ordenes"></td>
+        <td data-label="Local" class="ordenes"></td>
+        <td data-label="Logo" class="logo-raxoi"></td>
+        <td data-label="Visitante" class="raxoi"></td>
+        <td data-label="Resultado" class="resultado">0 - 0</td>
+        <td data-label="Campo" class="campo">PAB. CASTELAO 1 - ORDES</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-benjamin-1"></td>
+        <td data-label="Fecha" class="fecha">14/1/2017</td>
+        <td data-label="Hora" class="hora">12:30</td>
+        <td data-label="Logo" class="logo-liceo"></td>
+        <td data-label="Local" class="liceo-a"></td>
+        <td data-label="Logo" class="logo-liceo"></td>
+        <td data-label="Visitante" class="liceo-b"></td>
+        <td data-label="Resultado" class="resultado">1 - 1</td>
+        <td data-label="Campo" class="campo">COLEGIO LICEO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">17/1/2017</td>
+        <td data-label="Hora" class="hora">19:30</td>
+        <td data-label="Logo" class="logo-borbolla"></td>
+        <td data-label="Local" class="borbolla-b"></td>
+        <td data-label="Logo" class="logo-compania"></td>
+        <td data-label="Visitante" class="compa-a"></td>
+        <td data-label="Resultado" class="resultado">2 - 2</td>
+        <td data-label="Campo" class="campo">MONTE ALTO</td>
+    </tr>
+    <tr>
+        <td data-label="Modalidad" class="patines"></td>
+        <td data-label="Competición" class="patines-liga-senior-autonomica"></td>
+        <td data-label="Fecha" class="fecha">31/12/2016</td>
+        <td data-label="Hora" class="hora">11:30</td>
+        <td data-label="Logo" class="logo-ordenes"></td>
+        <td data-label="Local" class="ordenes"></td>
+        <td data-label="Logo" class="logo-raxoi"></td>
+        <td data-label="Visitante" class="raxoi"></td>
+        <td data-label="Resultado" class="resultado">2 - 3</td>
+        <td data-label="Campo" class="campo">PAB. CASTELAO 1 - ORDES</td>
+    </tr>
 </table>
 
 </body>

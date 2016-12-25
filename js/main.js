@@ -17,6 +17,9 @@ var updateFilters = function(){
         if(equipoA != filtroEquipo && equipoB != filtroEquipo){
             trArray[trIndex].style.display = 'none';
         }
+        if (filtroEquipo == "all-clubs") {
+            trArray[trIndex].style.display = '';
+        }
     }
 }
 
@@ -93,6 +96,26 @@ document.addEventListener("DOMContentLoaded", function loadLeagues() {
         dominicos[i].innerHTML="CLUB AA DOMINICOS";
     }
 
+    var traviesas = document.getElementsByClassName("traviesas");
+    for (i=0; i<traviesas.length; i++) {
+        traviesas[i].innerHTML="H.C. TRAVIESAS";
+    }
+
+    var raxoi = document.getElementsByClassName("raxoi");
+    for (i=0; i<raxoi.length; i++) {
+        raxoi[i].innerHTML="H.C. RAXOI";
+    }
+
+    var ordenes = document.getElementsByClassName("ordenes");
+    for (i=0; i<ordenes.length; i++) {
+        ordenes[i].innerHTML="A.C. ÓRDENES";
+    }
+
+    var lubians = document.getElementsByClassName("lubians");
+    for (i=0; i<lubians.length; i++) {
+        lubians[i].innerHTML="ESCOLA LUBIÁNS";
+    }
+
     /* Cargar logos */
 
     var logo_liceo = document.getElementsByClassName("logo-liceo");
@@ -108,6 +131,36 @@ document.addEventListener("DOMContentLoaded", function loadLeagues() {
     var logo_dominicos = document.getElementsByClassName("logo-dominicos");
     for (i=0; i<logo_dominicos.length; i++) {
         logo_dominicos[i].innerHTML="<img src='./img/logos/logo-dominicos.png' style='width: 35px'/>";
+    }
+
+    var logo_compania = document.getElementsByClassName("logo-compania");
+    for (i=0; i<logo_compania.length; i++) {
+        logo_compania[i].innerHTML="<img src='./img/logos/logo-compania.png' style='width: 35px'/>";
+    }
+
+    var logo_compos = document.getElementsByClassName("logo-compos");
+    for (i=0; i<logo_compos.length; i++) {
+        logo_compos[i].innerHTML="<img src='./img/logos/logo-compos.png' style='width: 35px'/>";
+    }
+
+    var logo_lubians = document.getElementsByClassName("logo-lubians");
+    for (i=0; i<logo_lubians.length; i++) {
+        logo_lubians[i].innerHTML="<img src='./img/logos/logo-lubians.png' style='width: 35px'/>";
+    }
+
+    var logo_traviesas = document.getElementsByClassName("logo-traviesas");
+    for (i=0; i<logo_traviesas.length; i++) {
+        logo_traviesas[i].innerHTML="<img src='./img/logos/logo-traviesas.png' style='width: 35px'/>";
+    }
+
+    var logo_raxoi = document.getElementsByClassName("logo-raxoi");
+    for (i=0; i<logo_raxoi.length; i++) {
+        logo_raxoi[i].innerHTML="<img src='./img/logos/logo-raxoi.png' style='width: 35px'/>";
+    }
+
+    var logo_ordenes = document.getElementsByClassName("logo-ordenes");
+    for (i=0; i<logo_ordenes.length; i++) {
+        logo_ordenes[i].innerHTML="<img src='./img/logos/logo-ordenes.png' style='width: 35px'/>";
     }
 
     addSelectorEvents();
